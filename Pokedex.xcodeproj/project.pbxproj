@@ -11,6 +11,10 @@
 		E1E699F529026D4100A4C523 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E699F429026D4100A4C523 /* ContentView.swift */; };
 		E1E699F729026D4300A4C523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E699F629026D4300A4C523 /* Assets.xcassets */; };
 		E1E699FA29026D4300A4C523 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E699F929026D4300A4C523 /* Preview Assets.xcassets */; };
+		E1E69A0729026EA200A4C523 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E69A0629026EA200A4C523 /* GridView.swift */; };
+		E1E69A0929026ECE00A4C523 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E69A0829026ECE00A4C523 /* PokemonModel.swift */; };
+		E1E69A0B2902714E00A4C523 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E69A0A2902714E00A4C523 /* PokemonViewModel.swift */; };
+		E1E69A0D29028FE600A4C523 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E69A0C29028FE600A4C523 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		E1E699F429026D4100A4C523 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1E699F629026D4300A4C523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1E699F929026D4300A4C523 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1E69A0629026EA200A4C523 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		E1E69A0829026ECE00A4C523 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		E1E69A0A2902714E00A4C523 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		E1E69A0C29028FE600A4C523 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +59,11 @@
 		E1E699F129026D4100A4C523 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				E1E69A0029026DAD00A4C523 /* Model */,
+				E1E69A0129026DB400A4C523 /* ViewModel */,
+				E1E69A0329026DCA00A4C523 /* View */,
 				E1E699F229026D4100A4C523 /* PokedexApp.swift */,
+				E1E69A0C29028FE600A4C523 /* Extensions.swift */,
 				E1E699F429026D4100A4C523 /* ContentView.swift */,
 				E1E699F629026D4300A4C523 /* Assets.xcassets */,
 				E1E699F829026D4300A4C523 /* Preview Content */,
@@ -65,6 +77,30 @@
 				E1E699F929026D4300A4C523 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1E69A0029026DAD00A4C523 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1E69A0829026ECE00A4C523 /* PokemonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1E69A0129026DB400A4C523 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1E69A0A2902714E00A4C523 /* PokemonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1E69A0329026DCA00A4C523 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1E69A0629026EA200A4C523 /* GridView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +175,10 @@
 			files = (
 				E1E699F529026D4100A4C523 /* ContentView.swift in Sources */,
 				E1E699F329026D4100A4C523 /* PokedexApp.swift in Sources */,
+				E1E69A0B2902714E00A4C523 /* PokemonViewModel.swift in Sources */,
+				E1E69A0729026EA200A4C523 /* GridView.swift in Sources */,
+				E1E69A0929026ECE00A4C523 /* PokemonModel.swift in Sources */,
+				E1E69A0D29028FE600A4C523 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

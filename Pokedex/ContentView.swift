@@ -1,21 +1,13 @@
-//
-//  ContentView.swift
-//  Pokedex
-//
-//  Created by Vincent Nguyen on 10/21/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color(hex: 0xf35167)
+                .ignoresSafeArea()
+            GridView()
         }
-        .padding()
+       
     }
 }
 
