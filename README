@@ -1,0 +1,15 @@
+I decided to use SwiftUI for rapid prototyping so I can dedicate more time working on the api calls than worrying about UI and constraints. 
+I implemented MVVM architecture where I used Model to create structs that help me convert JSON data into useful data to populate the app UI with.
+
+I began with milestone 1, where I first retrieved the list of the first 18 pokemon with its name and url of more data. 
+I decided to use completion handlers to ensure I first retrieved the list of pokemon, and then iterating through that list and using each 
+respective data url of each pokemon to populate a Pokemons array full of useful data I would use to populate a LazyVGrid. I was able to fetch the image for each pokemon
+by using the image url given by the sprite property and handing it to an AsyncImage view that populates that view asyncrhouly whenever its able to fetch that image
+from the url. To show a selected pokemon, I used a tap gesture and a highlightedPokemon property to specify which pokemon was just tapped.
+
+I decided to pursue milestone 2, where I realized I could do pagination through fetching in batches of pokemon everytime we reached the bottom of the page.
+Basically how my implementation worked was that once we see the last pokemon of our current grid, we then start fetching another batch of pokemon and appending
+that to our pokemons list. We repeat this batch fetching until we reached the mac count of 1154 pokemon in the api. 
+
+I also decided to make the app pretty by using an extension to get custom hex code colors to make it more like a real pokedex, and some highlighted blue borders
+to indicate what pokemon I selected.
